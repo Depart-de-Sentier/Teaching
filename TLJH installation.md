@@ -31,6 +31,10 @@ conda activate <env>
 
 # Configuring TLJH
 
+## Concept
+
+The `tljh-config` program modifies the file `/opt/tljh/config/config.yaml` - you can also browse or edit this file directly.
+
 ## Resource limits
 
 ```
