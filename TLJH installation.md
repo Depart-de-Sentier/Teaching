@@ -21,6 +21,14 @@ sudo -E conda create -n regional -c conda-forge -c cmutel brightway25 bw2regiona
 
 **Note**: Must be run with `sudo -E`.
 
+## Adding on to teaching environments after creation
+
+```
+source /opt/tljh/user/etc/profile.d/conda.sh
+conda activate <env>
+<install command with sudo -E>
+```
+
 # Configuring TLJH
 
 ## Resource limits
