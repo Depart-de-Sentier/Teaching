@@ -43,7 +43,7 @@ sudo tljh-config set limits.cpu 4
 sudo tljh-config reload
 ```
 
-## change default interface to `JupyterLab`
+## Change default interface to `JupyterLab`
 
 ```
 sudo tljh-config set user_environment.default_app jupyterlab
@@ -105,3 +105,9 @@ You need to delete from both the JupyterHub registry and from the linux system:
 sudo tljh-config remove-item users.allowed <username>
 sudo userdel jupyter-<username>
 ```
+
+# Sharing data
+
+Following https://tljh.jupyter.org/en/latest/howto/content/share-data.html.
+
+Shared data is in `/srv/data/`
