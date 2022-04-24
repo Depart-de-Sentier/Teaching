@@ -128,3 +128,20 @@ sudo userdel jupyter-<username>
 Following https://tljh.jupyter.org/en/latest/howto/content/share-data.html.
 
 Shared data is in `/srv/data/`
+
+# Specifics on read-only errors
+
+Some libraries want or require write permissions.
+
+Rower:
+
+```
+sudo chmod +777 /opt/tljh/user/envs/regional/lib/python3.10/site-packages/rower/data/ecoinvent\ 3.8\ cutoff/
+```
+
+bw2_lcimpact:
+
+```
+sudo chmod 666 /opt/tljh/user/envs/regional/lib/python3.10/site-packages/bw2_lcimpact/data/*.gpkg
+sudo chmod 777 /opt/tljh/user/envs/regional/lib/python3.10/site-packages/bw2_lcimpact/data
+```
