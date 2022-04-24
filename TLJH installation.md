@@ -57,6 +57,7 @@ The `tljh-config` program modifies the file `/opt/tljh/config/config.yaml` - you
 ```
 sudo tljh-config set limits.memory 16G
 sudo tljh-config set limits.cpu 4
+sudo tljh-config set services.cull.timeout 3600
 sudo tljh-config reload
 ```
 
@@ -145,3 +146,7 @@ bw2_lcimpact:
 sudo chmod 666 /opt/tljh/user/envs/regional/lib/python3.10/site-packages/bw2_lcimpact/data/*.gpkg
 sudo chmod 777 /opt/tljh/user/envs/regional/lib/python3.10/site-packages/bw2_lcimpact/data
 ```
+
+# Libraries that use absolute paths
+
+* bw2regional: for geocollections. needs to be copied to a read-all directory, and filepaths updated.
