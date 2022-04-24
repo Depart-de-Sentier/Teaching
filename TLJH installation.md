@@ -12,7 +12,6 @@ Using conda appears to require login into a Hub session and opening a terminal, 
 
 ## Teaching environmennts
 
-
 ```
 sudo -E conda create -n bw2 -c conda-forge -c cmutel brightway2 ipykernel seaborn tqdm
 sudo -E conda create -n bw25 -c conda-forge -c cmutel brightway25 ipykernel seaborn tqdm
@@ -23,10 +22,18 @@ sudo -E conda create -n regional -c conda-forge -c cmutel brightway25 bw2regiona
 
 ## Adding on to teaching environments after creation
 
+Note: This needs to be done in an SSH session, not via the terminal in the hub.
+
 ```
 source /opt/tljh/user/etc/profile.d/conda.sh
 conda activate <env>
-<install command with sudo -E>
+sudo -E /opt/tljh/user/condabin/conda install <library>
+```
+
+## Removing environments
+
+```
+conda remove --name myenv --all
 ```
 
 # Configuring TLJH
