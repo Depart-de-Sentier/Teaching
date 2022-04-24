@@ -36,6 +36,16 @@ sudo -E /opt/tljh/user/condabin/conda install <library>
 conda remove --name myenv --all
 ```
 
+# Make conda use mamba
+
+[Mamba is a faster conda]().
+
+```
+sudo -E conda update -n base conda
+sudo -E conda install -c conda-forge conda-libmamba-solver
+sudo -E conda config --set experimental_solver libmamba --env
+```
+
 # Configuring TLJH
 
 ## Concept
