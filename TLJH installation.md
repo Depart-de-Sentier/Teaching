@@ -81,6 +81,22 @@ sudo tljh-config add-item users.allowed <username>
 
 This can be run in an SSH session.
 
+## Switching authentication modes:
+
+Switch to anonymous usage:
+
+```
+sudo tljh-config set auth.type tmpauthenticator.TmpAuthenticator
+sudo tljh-config reload
+```
+
+Switch to only registered users:
+
+```
+sudo tljh-config set auth.type firstuseauthenticator.FirstUseAuthenticator
+sudo tljh-config reload
+```
+
 ## Setting user data
 
 Adding an approved user name **does not** create the Linux user - this happens on first login. To customize the new user, change the skeleton directory `/etc/skel/`.
