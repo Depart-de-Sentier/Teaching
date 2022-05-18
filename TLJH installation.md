@@ -38,7 +38,7 @@ conda remove --name myenv --all
 
 # Make conda use mamba
 
-[Mamba is a faster conda]().
+[Mamba is a faster conda](https://www.anaconda.com/blog/a-faster-conda-for-a-growing-community).
 
 ```
 sudo -E conda update -n base conda
