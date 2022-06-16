@@ -140,6 +140,12 @@ sudo tljh-config remove-item users.allowed <username>
 sudo userdel jupyter-<username>
 ```
 
+# User starting configuration
+
+Files are stored in:
+
+    /etc/skel/
+
 # Sharing data
 
 Following https://tljh.jupyter.org/en/latest/howto/content/share-data.html.
