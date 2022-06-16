@@ -33,7 +33,7 @@ sudo -E /opt/tljh/user/condabin/conda install <library>
 ## Removing environments
 
 ```
-conda remove --name myenv --all
+sudo -E /opt/tljh/user/condabin/conda remove --name myenv --all
 ```
 
 # Make conda use mamba
