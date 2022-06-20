@@ -27,7 +27,7 @@ Note: This needs to be done in an SSH session, not via the terminal in the hub.
 ```
 source /opt/tljh/user/etc/profile.d/conda.sh
 conda activate <env>
-sudo -E /opt/tljh/user/condabin/conda install <library>
+sudo -E /opt/tljh/user/condabin/conda install -c conda-forge -c cmutel <library>
 ```
 
 ## Removing environments
