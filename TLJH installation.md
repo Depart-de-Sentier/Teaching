@@ -20,6 +20,16 @@ sudo -E conda create -n regional -c conda-forge -c cmutel brightway25 bw2regiona
 
 **Note**: Must be run with `sudo -E`.
 
+## Registering `venv` kernels
+
+Activate the virtualenv, and then:
+
+```
+ipython kernel install --user --name <name>
+```
+
+The name doesn't have to be the same as the `venv`.
+
 ## Adding on to teaching environments after creation
 
 Note: This needs to be done in an SSH session, not via the terminal in the hub.
