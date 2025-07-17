@@ -182,3 +182,11 @@ sudo chmod 777 /opt/tljh/user/envs/regional/lib/python3.10/site-packages/bw2_lci
 # Libraries that use absolute paths
 
 * bw2regional: for geocollections. needs to be copied to a read-all directory, and filepaths updated.
+
+# `nbgitpuller` with Private Repos
+
+Set up a personal access token with the scope to read the private repo.
+
+The link can then look like:
+
+`https://hub.brightway.dev/hub/user-redirect/git-pull?repo=https%3A%2F%2F<token>%40github.com%2F<org>%2F<something-private>.git&branch=main`
