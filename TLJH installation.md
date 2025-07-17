@@ -95,17 +95,25 @@ This can be run in an SSH session.
 
 Switch to anonymous usage:
 
-```
+```console
 sudo tljh-config set auth.type tmpauthenticator.TmpAuthenticator
 sudo tljh-config reload
 ```
 
 Switch to only registered users:
 
-```
+```console
 sudo tljh-config set auth.type firstuseauthenticator.FirstUseAuthenticator
 sudo tljh-config reload
 ```
+
+Turn off new user registration with `firstuseauthenticator`:
+
+```console
+sudo tljh-config set auth.FirstUseAuthenticator.create_users False
+sudo tljh-config reload
+```
+
 
 ## Setting user data
 
