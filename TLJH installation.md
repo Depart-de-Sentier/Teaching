@@ -104,6 +104,7 @@ Switch to only registered users:
 
 ```console
 sudo tljh-config set auth.type firstuseauthenticator.FirstUseAuthenticator
+sudo tljh-config set auth.FirstUseAuthenticator.create_users True
 sudo tljh-config reload
 ```
 
